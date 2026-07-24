@@ -1,67 +1,46 @@
 # 🎬 Movie Ticket Booking System
 
-A backend application built with **Java** and **Spring Boot** that simulates a real-world movie ticket booking platform. The system allows users to discover movies based on their city, view available shows, and book seats while providing administrators with tools to manage movies, theaters, and show schedules.
+This is a backend project built using **Java** and **Spring Boot** for a movie ticket booking system. The application allows users to browse movies, check available shows, and book tickets. It also includes admin APIs to manage movies, theaters, cities, and shows.
 
-The project is designed using a layered architecture and follows RESTful API principles, making it scalable, maintainable, and suitable for learning enterprise backend development.
-
-## 🚀 GitHub Repository
-
-**Repository:** https://github.com/ansul-18/BookMyShow
+I built this project to improve my understanding of Spring Boot, REST APIs, database design, and how a backend application is structured.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
-* **Language:** Java
-* **Framework:** Spring Boot
-* **Database:** MySQL
-* **ORM:** Spring Data JPA, Hibernate
-* **Build Tool:** Maven
-* **API Testing:** Postman
-* **Version Control:** Git & GitHub
+* Java
+* Spring Boot
+* Spring Data JPA
+* Hibernate
+* MySQL
+* Maven
+* Postman
+* Git & GitHub
 
 ---
 
-## ✨ Features
+## Features
 
-### User Features
+### User
 
-* Browse movies based on city.
-* View available theaters and show timings.
+* Browse movies by city.
+* View available shows.
 * Check seat availability.
 * Book movie tickets.
 
-### Admin Features
+### Admin
 
-* Manage cities.
-* Add and manage theaters.
+* Add and manage cities.
+* Add theaters and screens.
 * Add and manage movies.
-* Schedule movie shows.
-* Configure seat layouts.
+* Create movie shows.
+* Manage seat layouts.
 
 ---
 
-## 🏗 Architecture
+## Project Structure
 
-The project follows a layered architecture:
-
-```
-Controller
-    ↓
-Service
-    ↓
-Repository
-    ↓
-MySQL Database
-```
-
-This separation improves code maintainability, scalability, and testability.
-
----
-
-## 📂 Project Structure
-
-```
+```text
 src/main/java/com/project
 │
 ├── controller
@@ -75,47 +54,42 @@ src/main/java/com/project
 
 ---
 
-## 📡 REST API Endpoints
+## API Endpoints
 
-| Method | Endpoint    | Description             |
-| ------ | ----------- | ----------------------- |
-| GET    | `/movies`   | Retrieve movies by city |
-| POST   | `/movies`   | Add a new movie         |
-| POST   | `/theaters` | Add a theater           |
-| POST   | `/shows`    | Create a movie show     |
-| POST   | `/bookings` | Book movie tickets      |
-
----
-
-## 📚 Concepts Implemented
-
-* RESTful API Development
-* Spring Boot
-* Spring Data JPA & Hibernate
-* Layered Architecture
-* Entity Relationships (One-to-One, One-to-Many, Many-to-Many)
-* Exception Handling
-* Data Validation
-* CRUD Operations
-* MySQL Integration
+| Method | Endpoint    | Description        |
+| ------ | ----------- | ------------------ |
+| GET    | `/movies`   | Get movies by city |
+| POST   | `/movies`   | Add a movie        |
+| POST   | `/theaters` | Add a theater      |
+| POST   | `/shows`    | Create a show      |
+| POST   | `/bookings` | Book movie tickets |
 
 ---
 
-## 🔮 Future Enhancements
+## What I Learned
 
-* JWT Authentication & Spring Security
-* Role-Based Access Control (Admin/User)
-* Payment Gateway Integration
-* React Frontend
-* Email Notifications
-* Docker Deployment
-* Recommendation System
+Working on this project helped me learn:
+
+* Building REST APIs using Spring Boot.
+* Designing database relationships using JPA and Hibernate.
+* Organizing a project using Controller, Service, and Repository layers.
+* Performing CRUD operations with MySQL.
+* Handling exceptions and validating API requests.
 
 ---
 
-## 👨‍💻 Author
+## Future Improvements
+
+* User Authentication with Spring Security and JWT.
+* Online payment integration.
+* React frontend.
+* Email notifications.
+* Docker support.
+
+---
+
+## Author
 
 **Ansul Verma**
 
-* Java Backend Developer (Learning)
-* Passionate about Spring Boot, REST APIs, and Backend Development.
+Computer Science Student | Java Backend Developer (Learning)
