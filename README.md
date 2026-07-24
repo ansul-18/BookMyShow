@@ -1,61 +1,61 @@
-# 🎬 Movie Ticket Booking System (Spring Boot)
+# 🎬 Movie Ticket Booking System
 
-A full-featured backend application for a movie ticket booking system, designed to simulate real-world scenarios like location-based movie discovery, theater management, and seat booking.
+A backend application built with **Java** and **Spring Boot** that simulates a real-world movie ticket booking platform. The system allows users to discover movies based on their city, view available shows, and book seats while providing administrators with tools to manage movies, theaters, and show schedules.
 
-This project focuses on building a scalable backend architecture similar to real-world platforms, enabling users to explore movies by city and book tickets seamlessly.
+The project is designed using a layered architecture and follows RESTful API principles, making it scalable, maintainable, and suitable for learning enterprise backend development.
 
----
+## 🚀 GitHub Repository
 
-## 💻 GitHub Repository
-
-👉 https://github.com/ansul-18/BookMyShow
+**Repository:** https://github.com/ansul-18/BookMyShow
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-* **Backend:** Java, Spring Boot
+* **Language:** Java
+* **Framework:** Spring Boot
 * **Database:** MySQL
-* **ORM:** Hibernate & JPA
-* **API Testing:** Postman
+* **ORM:** Spring Data JPA, Hibernate
 * **Build Tool:** Maven
+* **API Testing:** Postman
 * **Version Control:** Git & GitHub
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-### 🎥 User Features
+### User Features
 
-* Browse movies based on **city/location**
-* View running shows in nearby theaters
-* Check seat availability in real-time
-* Book tickets seamlessly
+* Browse movies based on city.
+* View available theaters and show timings.
+* Check seat availability.
+* Book movie tickets.
 
-### 🏢 Admin Features
+### Admin Features
 
-* Add & manage **cities**
-* Add **theaters and screens**
-* Add & manage **movies**
-* Configure **shows and timings**
-* Manage **seat layouts and pricing**
-
-### ⚙️ System Features
-
-* RESTful API design
-* Real-world entity relationships (Movie, Theater, Show, Booking, Seat)
-* Data validation and exception handling
-* Scalable layered architecture
+* Manage cities.
+* Add and manage theaters.
+* Add and manage movies.
+* Schedule movie shows.
+* Configure seat layouts.
 
 ---
 
-## 🧠 Real-World Concepts Implemented
+## 🏗 Architecture
 
-* 🔗 Entity Relationships & Mapping (JPA)
-* 📌 Booking flow with seat locking logic
-* 🏙️ Location-based filtering (City-wise data handling)
-* ⚡ Backend system design similar to production-level apps
-* 🧩 Clean architecture (Controller → Service → Repository)
+The project follows a layered architecture:
+
+```
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+MySQL Database
+```
+
+This separation improves code maintainability, scalability, and testability.
 
 ---
 
@@ -64,33 +64,58 @@ This project focuses on building a scalable backend architecture similar to real
 ```
 src/main/java/com/project
 │
-├── controller     # REST APIs
-├── service        # Business Logic
-├── repository     # Database Layer
-├── entity         # JPA Entities
-├── dto            # Data Transfer Objects
-└── config         # Configurations
+├── controller
+├── service
+├── repository
+├── entity
+├── dto
+├── config
+└── exception
 ```
 
 ---
 
+## 📡 REST API Endpoints
 
-## 📡 API Endpoints (Sample)
+| Method | Endpoint    | Description             |
+| ------ | ----------- | ----------------------- |
+| GET    | `/movies`   | Retrieve movies by city |
+| POST   | `/movies`   | Add a new movie         |
+| POST   | `/theaters` | Add a theater           |
+| POST   | `/shows`    | Create a movie show     |
+| POST   | `/bookings` | Book movie tickets      |
 
-| Method | Endpoint | Description        |
-| ------ | -------- | ------------------ |
-| GET    | /movies  | Get movies by city |
-| POST   | /movies  | Add movie (Admin)  |
-| POST   | /theater | Add theater        |
-| POST   | /show    | Create show        |
-| POST   | /booking | Book tickets       |
+---
+
+## 📚 Concepts Implemented
+
+* RESTful API Development
+* Spring Boot
+* Spring Data JPA & Hibernate
+* Layered Architecture
+* Entity Relationships (One-to-One, One-to-Many, Many-to-Many)
+* Exception Handling
+* Data Validation
+* CRUD Operations
+* MySQL Integration
 
 ---
 
 ## 🔮 Future Enhancements
 
-* 🔐 User Authentication (JWT / Spring Security)
-* 💳 Payment Gateway Integration
-* 📱 Frontend UI (React / Angular)
-* 📊 Admin Dashboard
-* 🎯 Recommendation System
+* JWT Authentication & Spring Security
+* Role-Based Access Control (Admin/User)
+* Payment Gateway Integration
+* React Frontend
+* Email Notifications
+* Docker Deployment
+* Recommendation System
+
+---
+
+## 👨‍💻 Author
+
+**Ansul Verma**
+
+* Java Backend Developer (Learning)
+* Passionate about Spring Boot, REST APIs, and Backend Development.
